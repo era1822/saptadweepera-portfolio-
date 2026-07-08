@@ -58,79 +58,81 @@ window.addEventListener("scroll",()=>{
 
 });
 
-
 // =============================
 // Floating Pearl Particles
 // =============================
 
 tsParticles.load("particles-js", {
 
-    background:{
-        color:{
-            value:"#081b29"
+    background: {
+        color: {
+            value: "#081b29"
         }
     },
 
-    fpsLimit:60,
+    fpsLimit: 60,
 
-    particles:{
+    particles: {
 
-        number:{
-            value:80
+        number: {
+            value: 70
         },
 
-        color:{
-            value:[
+        color: {
+            value: [
                 "#ffffff",
-                "#d4af37",
-                "#00d4ff"
+                "#f8f8ff",
+                "#f5f5f5",
+                "#e6e6fa",
+                "#d4af37"
             ]
         },
 
-        shape:{
-            type:"circle"
+        shape: {
+            type: "circle"
         },
 
-        opacity:{
-            value:0.7
-        },
-
-        size:{
-            value:{
-                min:2,
-                max:6
+        opacity: {
+            value: {
+                min: 0.25,
+                max: 0.9
             }
         },
 
-        move:{
-            enable:true,
-            speed:0.6,
-            direction:"none",
-            random:true,
-            straight:false
+        size: {
+            value: {
+                min: 2,
+                max: 9
+            }
         },
 
-        links:{
-            enable:false
-        }
+        move: {
+            enable: true,
+            speed: 0.4,
+            random: true,
+            direction: "none"
+        },
 
+        links: {
+            enable: false
+        }
     },
 
-    interactivity:{
-
-        events:{
-            onHover:{
-                enable:true,
-                mode:"repulse"
+    interactivity: {
+        events: {
+            onHover: {
+                enable: true,
+                mode: "bubble"
             }
         },
 
-        modes:{
-            repulse:{
-                distance:120
+        modes: {
+            bubble: {
+                distance: 150,
+                size: 12,
+                duration: 2,
+                opacity: 1
             }
         }
-
     }
-
 });
