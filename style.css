@@ -145,62 +145,13 @@ max-width:620px;
 
 /* BUTTONS */
 
-.buttons{
-
-display:flex;
-
-gap:20px;
-
-}
-
-.btn{
-
-padding:15px 40px;
-
-background:#00abf0;
-
-color:white;
-
-text-decoration:none;
-
-border-radius:50px;
-
-font-weight:600;
-
-transition:.4s;
-
-}
-
 .btn:hover{
+    transform:translateY(-8px) scale(1.05);
 
-transform:translateY(-6px);
-
-box-shadow:0 0 30px #00abf0;
-
-}
-
-.btn2{
-
-padding:15px 40px;
-
-border:2px solid #00abf0;
-
-color:#00abf0;
-
-border-radius:50px;
-
-text-decoration:none;
-
-transition:.4s;
-
-}
-
-.btn2:hover{
-
-background:#00abf0;
-
-color:white;
-
+    box-shadow:
+        0 0 20px #00abf0,
+        0 0 50px #00abf0,
+        0 0 80px rgba(0,171,240,.6);
 }
 
 /* =========================
