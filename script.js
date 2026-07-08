@@ -8,4 +8,34 @@ for (let link of links) {
         const targetElement = document.querySelector(targetId);
         targetElement.scrollIntoView({ behavior: "smooth" });
     });
+}const navLinks=document.querySelectorAll("nav ul li a");
+
+navLinks.forEach(link=>{
+
+link.addEventListener("click",()=>{
+
+navLinks.forEach(item=>item.classList.remove("active"));
+
+link.classList.add("active");
+
+});
+
+});
+
+window.addEventListener("scroll",()=>{
+
+document.querySelectorAll(".skill").forEach(skill=>{
+
+const top=skill.getBoundingClientRect().top;
+
+if(top<window.innerHeight-100){
+
+skill.style.opacity="1";
+
+skill.style.transform="translateY(0px)";
+
 }
+
+});
+
+});
