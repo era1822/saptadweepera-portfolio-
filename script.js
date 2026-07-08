@@ -219,3 +219,62 @@ glow.style.top=e.clientY-100+"px";
 
 console.log("%cWelcome to Era's Portfolio 💙",
 "color:#00abf0;font-size:20px;font-weight:bold;");
+particlesJS("particles-js", {
+
+  particles: {
+
+    number: {
+
+      value: 80
+
+    },
+
+    color: {
+
+      value: "#00abf0"
+
+    },
+
+    shape: {
+
+      type: "circle"
+
+    },
+
+    opacity: {
+
+      value: 0.4
+
+    },
+
+    size: {
+
+      value: 3
+
+    },
+
+    line_linked: {
+
+      enable: true,
+
+      distance: 150,
+
+      color: "#00abf0",
+
+      opacity: 0.3,
+
+      width: 1
+
+    },
+
+    move: {
+
+      enable: true,
+
+      speed: 2
+
+    }
+
+  }
+
+});
